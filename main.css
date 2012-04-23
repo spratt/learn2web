@@ -1,3 +1,39 @@
 a{
 	text-decoration:none;
 }
+
+body{
+	font-family:"Arial",sans-serif;
+}
+
+code{
+	display:block;
+	padding:5px;
+}
+
+.container{
+	position:relative;
+	margin: auto;
+}
+
+.page{
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+}
+
+.left{
+	position:absolute;
+	left:0px;
+}
+
+.center{
+	position:absolute;
+	left:50%;
+}
+
+.right{
+	position:absolute;
+	right:0px;
+	
+}

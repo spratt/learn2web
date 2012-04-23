@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<link href="../main.css" rel="stylesheet" type="text/css">
@@ -5,13 +6,16 @@
 	<?php include('../pagination.php'); ?>
 </head>
 <body>
+	<div class="page">
+	<?php navigation(); ?>
+	<article>
 	<p>
 	Javascript (JS) is probably the most powerful and useful language from a web
 	developper's perspective. But what the hell is it?
 	</p>
 	
 	<p>
-	Javascript is a weakly typed, garbage collected, object oriented language.
+	Javascript is a client-side, weakly typed, garbage collected, object oriented language.
 	Holy shit what did I just say? 
 	</p>
 	
@@ -82,16 +86,25 @@
   and you may run out of memory because you were forgetting too many things
   faster than the GC could tidy them up. 
 	</p>
-	
 	<p>
-	Finally, a <i>weakly typed</i> language is simply a language that lets you
+	A <i>weakly typed</i> language is simply a language that lets you
 	change your mind about what should be stored in a variable. So while in many
 	languages putting a number in a variable means that variable can only hold
 	numbers, in Javascript you can just turn around and start putting text or
 	objects in it. This makes JS more flexible, but also makes it easier for
 	the programmer to make mistakes without knowing about it.
-	
+	<p>
+	Finally, a client-side language is one that runs on the user's computer, and
+	not on the computer that stores the website. This is really powerful because
+	it means the language can be incredibly responsive, and it also means that your
+	server undergoes no extra load if there are 10, 100, or 1000 people just 
+	idling on a page running javascript applications. You may as well be serving
+	static html pages. Of course, if you have the
+	application communicate with the server this benefit is lessened.
+	</p>
+	</article>
 	<?php navigation(); ?>
+	</div>
 </body>
 </html>
 

@@ -29,14 +29,16 @@ foreach ($pageList->childNodes AS $page){
 
 function navigation(){
 	global $prevPage, $nextPage;
+	echo "<div class='container'><nav>";
 	if(strlen($prevPage)>0){
-		echo "<a href='".$prevPage."'>Previous </a>";
+		echo "<div class='left'><a href='".$prevPage."'>Previous </a></div>";
 	}
 	
-	echo "<a href='./'> Main </a>";
+	echo "<div class='center'><a href='./'> Index </a></div>";
 	
 	if(strlen($nextPage)>0){
-		echo "<a href='".$nextPage."'> Next</a>";
+		echo "<div class='right'><a href='".$nextPage."'> Next</a></div>";
 	}
+	echo "</nav></div></br>";
 }
 ?>
